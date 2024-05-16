@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Town Coffee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .logo {
+            margin-left: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0; 
+            transform: translateY(-20px);
+           
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        video {
+            display: block;
+            margin: 0 auto;
+            width: 30%;
+            animation: slideIn 1s forwards;
+        }
+
+        img {
+            display: block;
+            margin: 60px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            margin: 20px;
+            text-align: center;
+            max-width: 200px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Minlogoofstore.jpg" alt="Bean Town Coffee Logo" class="logo" height="50" width="100">     
+        <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section id="home">
+        <h1>Welcome to Bean Town Coffee</h1>
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img src="Untitled design.jpg" alt="Coffee Shop">
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="Espresso.jpg" alt="Espresso">
+                <p>Espresso - $2.50</p>
+            </div>
+            <div class="item">
+                <img src="Cappuccino.jpg" alt="Cappuccino">
+                <p>Cappuccino - $3.00</p>
+            </div>
+            <div class="item">
+                <img src="Latte.jpg.webp" alt="Latte">
+                <p>Latte - $3.50</p>
+            </div>
+            <div class="item">
+                <img src="Frappuccino.jpg" alt="Frappuccino">
+                <p>Frappuccino - $4.00</p>
+            </div>
+            <div class="item">
+                <img src="Mocha.jpg" alt="Mocha">
+                <p>Mocha - $4.50</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to place an order? Feel free to reach out to us!</p>
+        <p>Address: Pavilion Center, Kuala Lumpur</p>
+        <p>Email: <a href="mailto:info@beantowncoffee.com">info@beantowncoffee.com</a></p>
+        <p>Phone: +123456789</p>
+        <p>To place an order, simply send us a message or email with your desired items and quantities. We'll get back to you promptly to confirm your order and arrange payment.</p>
+        
+        <h3>Send us an email:</h3>
+        <form action="mailto:info@beantowncoffee.com" method="post" enctype="text/plain">
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Bean Town Coffee. All rights reserved.</p>
+    </footer>
+</body>
+</html>
